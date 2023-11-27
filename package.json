@@ -1,0 +1,23 @@
+{
+  "name": "metarwacontract",
+  "version": "1.0.0",
+  "description": "Smart contract code for interfacing with on chain data for assessing real world value of tokenized assets.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoeAB/MetaRWAContract.git"
+  },
+  "author": "Joe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoeAB/MetaRWAContract/issues"
+  },
+  "homepage": "https://github.com/JoeAB/MetaRWAContract#readme",
+  "dependencies": {
+    "@chainlink/contracts": "^0.8.0",
+    "@openzeppelin/contracts": "^5.0.0"
+  }
+}
