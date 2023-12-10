@@ -7,7 +7,7 @@ import "@openzeppelin/contracts/utils/Strings.sol";
 
 
 contract RealEstateNFT is ERC721Enumerable, Ownable {
-    constructor() ERC721("RealEstateNFT", "RE") Ownable(msg.sender) {}
+    constructor() ERC721("RealEstateNFT", "RE") Ownable(_owner) {}
 
     function mint(address to, string memory tokenUrl) external onlyOwner {
         bytes32 hash = keccak256(bytes(tokenUrl));
