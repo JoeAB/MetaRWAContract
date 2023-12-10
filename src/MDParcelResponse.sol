@@ -50,7 +50,7 @@ contract MdParcelResponse is FunctionsClient, ConfirmedOwner {
         emit LogEntered(addressLookUp);
         // Source JavaScript to run
         string memory source =
-            string.concat("const url = `https://geodata.md.gov/imap/rest/services/PlanningCadastre/MD_PropertyData/MapServer/0/query?where=address='", addressLookUp,"'&outFields=*&outSR=4326&f=json`; const newRequest = Functions.makeHttpRequest({ url }); const newResponse = await newRequest; if (newResponse.error) { throw Error(`Error fetching news`); } return Functions.encodeString(JSON.stringify(newResponse.data.features[0].attributes.NFMIMPVL));");
+            string.concat("const url = `https://geodata.md.gov/imap/rest/services/PlanningCadastre/MD_PropertyData/MapServer/0/query?where=address='", addressLookUp,"'&outFields=*&outSR=4326&f=json`; const newRequest = Functions.makeHttpRequest({ url }); const newResponse = await newRequest; if (newResponse.error) { throw Error(`Error fetching news`); } return Functions.encodeString(JSON.stringify(newResponse.data.features[0].attributes.NFMTTLVL));");
 
         FunctionsRequest.Request memory req;
         req.initializeRequestForInlineJavaScript(source);
