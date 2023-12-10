@@ -4,7 +4,7 @@
   "description": "Smart contract code for interfacing with on chain data for assessing real world value of tokenized assets.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -18,6 +18,11 @@
   "homepage": "https://github.com/JoeAB/MetaRWAContract#readme",
   "dependencies": {
     "@chainlink/contracts": "^0.8.0",
-    "@openzeppelin/contracts": "^5.0.0"
+    "@openzeppelin/contracts": "^5.0.0",
+    "@truffle/hdwallet-provider": "^1.5.1",
+    "ganache-cli": "^6.12.2",
+    "mocha": "^9.1.2",
+    "solc": "^0.4.17",
+    "web3": "^1.6.0"
   }
 }
